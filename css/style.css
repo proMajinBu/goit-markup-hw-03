@@ -1,0 +1,402 @@
+:root {
+  --header-color: #ffffff;
+  --primary-text-color: #212121;
+  --second-text-color: #757575;
+  --accent-color: #2196f3;
+  --third-color: #000000;
+  --button-color: #f5f4fa;
+}
+* {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.web {
+  color: var(--accent-color);
+}
+
+.second-page,
+.third-page {
+  color: #2196f3;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* --- header --- */
+
+header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logotype {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+  display: flex;
+  margin-right: 93px;
+  margin-bottom: 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-conect {
+  margin-left: auto;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.menu-list .menu-link-color[href^="mailto:"] {
+  color: var(--accent-color);
+}
+
+.menu-link-color {
+  color: var(--second-text-color);
+}
+
+.menu-link.current {
+  color: var(--accent-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+/* --- hero --- */
+
+.hero-top {
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+  color: var(--header-color);
+}
+
+.hero-after-title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.hero-button {
+  display: block;
+  margin: 0 auto;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  border: 1px, var(--accent-color);
+  color: var(--header-color);
+  background-color: var(--accent-color);
+}
+
+.btn:hover {
+  background-color: #188ce8;
+}
+
+/* --- section 2 --- */
+.section-two {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-two-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-two-item {
+  width: 270px;
+  height: 101px;
+}
+
+.section-two-list {
+  background-color: #ffffff;
+  display: flex;
+}
+
+.text-name {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+
+.text-item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+/* --- section three --- */
+.section-three {
+  padding-bottom: 94px;
+}
+
+.section-three-list {
+  display: flex;
+}
+
+.section-three-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-three-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--primary-text-color);
+}
+/* --- section 4 --- */
+
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.team-list {
+  display: flex;
+  margin-right: 30px;
+}
+
+.team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-right: 30px;
+}
+
+.team-after-item {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+  text-align: center;
+  padding-bottom: 10px;
+  color: var(--primary-text-color);
+}
+
+.team-prof {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--second-text-color);
+}
+/* --- footer --- */
+
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-address {
+  font-style: inherit;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.footer-second-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-second-link:hover,
+.footer-second-link:focus {
+  color: var(--accent-color);
+}
+
+/* -------portfolio ---------*/
+
+.menu-list .menu-link-color-email[href^="mailto:"] {
+  color: var(--second-text-color);
+}
+.menu-list .menu-link-color-email:hover {
+  color: #188ce8;
+}
+
+.projects {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 34px;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--primary-text-color);
+  /* height: 38px; */
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border: 1px, var(--accent-color);
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--header-color);
+  background-color: var(--accent-color);
+}
+.button-light {
+  background-color: var(--button-color);
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.project-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.project-btn:not(:first-child) {
+  margin-left: 8px;
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  padding-bottom: 94px;
+  margin-bottom: -30px;
+}
+
+.projects-items {
+  flex-basis: calc((100% - 3 * 30px) / 9);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.projects-items-description {
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+}
